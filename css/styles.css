@@ -130,7 +130,20 @@ img {
     font-weight: 500;
     opacity: .80;
 }
-g
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
 /* ############# 4 - SECTION, TRABAJA CON NOSOTROS #####################################################*/
 
 .unete-card {
