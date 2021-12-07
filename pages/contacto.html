@@ -5,96 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 6 - Fernando Valdez</title>
-    <!--CSS Styles-->
-    <link rel="stylesheet" href="../css/styles.css">
-    <!--Font Awesome-->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/77408c3814.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <!-- Navbar-->
-    <header class="header">
-        <nav class="nav">
-            <div class="brand-title">
-                <img class="logo" src="../images/cleanvel-logo.png" alt="Cleanvel logo">
-            </div>
-            <!-- Responsive hamburguer menu-->
-            <div class="toggle-button"> 
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            
-            <div class="navbar-links hamburguer">
-                <ul>
-                    <li>
-                        <a href="../index.html" class="nav-link">Inicio</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-xl">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/cleanvel-logo.png" alt="Cleanvel logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li>
-                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
                     </li>
-                    <li>
-                        <a href="porqueElegirnos.html" class="nav-link">Porque Elegirnos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                     </li>
-                    <li>
-                        <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/porqueElegirnos.html">Ecofriendly</a>
                     </li>
-                    <li>
-                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-
-    <!-- Main, Contacto-->
-    <main class="container-contacto">
-        <div class="contacto-title">
-            <h1>¿Alguna consulta? <br> Puedes contactarnos de la siguiente forma:</h1>
         </div>
-        <section class="contacto-card-container">
-            <div class="contact-card" id="contact">
-                <img src="../images/icons8-secured-letter-96.png" alt="" class="contact-image">
-                <a href="mailto:fervaldezjr11@gmail.com?Subject=Consulta%20por%20presupuesto%20de" class="contact-link">Email ></a>
+    </nav>
+    <!-- Banner -->
+    <main>
+        <section class="banner-section pt-5 container-xxxl d-flex flex-column flex-md-row justify-content-md-evenly align-items-center">
+            <div class="banner-text d-flex flex-column justify-content-between align-items-center text-center">
+                <i class="fas fa-paper-plane floating"></i>
+                <h1 class="my-5">¿Te quedo alguna duda? <br> Contactate con nosotros.</h1>
             </div>
-            <div class="contact-card">
-                <img src="../images/icons8-whatsapp-96.png" alt="" class="contact-image">
-                <a href="https://api.whatsapp.com/send?phone=34682708170" target="_blank" class="contact-link">WhatsApp ></a>
-            </div>
-            <div class="contact-card">
-                <img src="../images/icons8-phone-96.png" alt="" class="contact-image">
-                <a href="tel:+34682708170" class="contact-link">Llamanos ></a>
+            <img class="px-1" src="../images/undraw_contact_us_-15-o2.svg" alt="Undraw contact">
+        </section>
+        <!-- Contacto -->
+        <section class="container-xl contacto-section">
+            <div class="row">
+                <!-- Correo -->
+                <div class="col-md-3 col-sm-1 card-contacto">
+                    <div class="text-contact">
+                        <i class="fas fa-envelope"></i>
+                        <h2>Envianos un correo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatem, corrupti similique obcaecati eum porro dolorem.</p>
+                    </div>
+                    <div class="button-contact">
+                        <a href="#">Enviar email ></a>
+                    </div>
+                </div>
+                <!-- WhatsApp -->
+                <div class="col-md-3 col-sm-1 card-contacto">
+                    <div class="text-contact">
+                        <i class="fab fa-whatsapp-square"></i>
+                        <h2>Chateá con nosotros</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatem, corrupti similique obcaecati eum porro dolorem.</p>
+                    </div>
+                    <div class="button-contact">
+                        <a href="#">Inicia un chat ></a>
+                    </div>
+                </div>
+                <!-- Llamada -->
+                <div class="col-md-3 col-sm-1 card-contacto">
+                    <div class="text-contact">
+                        <i class="fas fa-phone"></i>
+                        <h2>Realizá una llamada</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatem, corrupti similique obcaecati eum porro dolorem.</p>
+                    </div>
+                    <div class="button-contact">
+                        <a href="#">Llamanos ></a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
     <!-- Footer -->
-    <footer class="footer">
-        <section class="footer-section-top">
-            <div class="left-footer">
-                <div class="text-footer">
-                    <h3 class="footer-tittle">Nuestras redes sociales.</h3>
-                    <a href="#" target="_blank" class="footer-link"> <i class="fab fa-linkedin"></i> Linkedin</a>
-                    <a href="#" target="_blank" class="footer-link"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                    <a href="mailto:fervaldezjr11@gmail.com" target="_blank" class="footer-link"> <i class="fas fa-envelope-square"></i> Email</a>
+    <footer>
+        <div class="container-xl d-flex flex-column justify-content-center align-items-center">
+            <div class="row">
+                <!-- Hablemos -->
+                <div class="col-md-4 section-hablemos">
+                    <h3>Hablemos</h3>
+                    <div class="row">
+                        <a href="https://api.whatsapp.com/send?phone=34682708170"> Inicia un chat en WhatsApp.</a>
+                        <a href="tel:+34682708170"> Inicia una llamada. </a>
+                        <a href="mailto:fervaldezjr11@gmail.com"> Envianos un correo. </a>
+                    </div>
+                </div>
+                <!-- Siguenos -->
+                <div class="col-md-4 section-siguenos">
+                    <h3>Siguenos</h3>
+                    <div class="row">
+                        <a href="https://www.linkedin.com/in/fervaldezjr/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Encuentranos -->
+                <div class="col-md-4 section-encuentranos">
+                    <h3>Encuentranos</h3>
+                    <p>Ubicados en Barcelona, Cataluña, España.</p>
                 </div>
             </div>
-            <div class="center-footer">
-                <div class="text-footer">
-                    <h3 class="footer-tittle">Preguntas frecuentes.</h3>
-                    <a href="#" class="footer-link">¿Lorem ipsum dolor sit amet?</a>
-                    <a href="#" class="footer-link">¿Lorem ipsum dolor sit amet?</a>
-                    <a href="#" class="footer-link">¿Lorem ipsum dolor sit amet?</a>
-                </div>
+                <!-- Firma -->
+            <div class="firma container-fluid justify-content-center align-items-end text-center">
+                <p>Copyright © 2021 Developed for <a href="https://www.linkedin.com/in/fervaldezjr/">Fernando Valdez. </a>Todos los derechos reservados.</p>
             </div>
-
-        </section>
-        <section class="footer-section-bottom">
-            <div class="footer-copyright">
-                <p class="copy-text">Copyright &copy; 2021 Desarrollado por <a href="../index.html" class="copy-design">Fernando Valdez.</a> Todos los derechos reservados.</p>
-            </div>
-        </section>
+        </div>
     </footer>
-    <!-- Menu hamburguesa -->
-    <script src="../js/menu.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </script>
 </body>
 </html>
