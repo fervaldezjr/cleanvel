@@ -1,30 +1,27 @@
-/*
-########### Indice #########################################
+/*  ##################################################################################################################
+    Index of styles ##################################################################################################
 
-=======================================================Index
-1 - ESTILOS GENERALES 
-2 - NAVEGACION
-3 - MAIN, BANNER CON SLOGAN
-4 - SECTION, TRABAJA CON NOSOTROS
-5 - SECTION, LIMPIEZA FRECUENTE
-6 - SECTION, LIMPIEZA OCASIONAL
-7 - FOOTER
-8 - MENU HAMBURGUESA
+    1 General
 
-=======================================================Servicios
-9 - MAIN, NUESTROS SERVICIOS
+    - Index {
+        2 Navigation
+        3 Banner
+        4 Hero
+        5 Services
+        6 Footer
+    }
 
-=======================================================Porque Elegirnos
-10 - MAIN, PORQUE ELEGIRNOS
+    - Servicios {
+        7 Selection
+    }
 
-=======================================================Nosotros
-11 - MAIN, NOSOTROS
+    - Nosotros {
+        8 Nosotros
+    }
 
-=======================================================Contacto
-12 - MAIN, CONTACTO
-*/
+##################################################################################################################*/
 
-/* ##############  1 - ESTILOS GENERALES   ############################################ */
+/*##############  1 General   ####################################################################################### */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -41,94 +38,187 @@ html{
 
 body { 
     font-family: 'Inter', sans-serif; /* Fuente general */
+    font-size: 10px;
 }
 
 img {
     width: 100%; /* Imagenes ocupando el 100% del espacio disponible */
 }
 
-.container {
-    margin: 0 10px;
+:root {
+    --skyblue: #1ca5bd;
+    --white: #f9fdff; 
+    --black: #1d1d1f;
+    --blue: #0066cc;
+    --grey: #ededee;
 }
 
 
-/* ############# 2 - NAVEGACION #####################################################*/
-
-.nav {
+/*##############  2 Navigation   ####################################################################################### */
+nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    font-family: 'Inter', sans-serif;
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 150px;
     min-width: 70px;
+}
+
+.navbar {
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--skyblue);
+
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .012em;
+    line-height: 1.4211;
+
+    padding-right: 1rem;
+
+    margin: .8rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: var(--skyblue);
+    color: var(--white);
+    border-radius: 5px;
+
+    transition: .7s ease;
+    
 }
 
 .navbar-links ul {
     display: flex;
 }
 
-.navbar-links li {
-    margin-left: 3px;
+.navbar-light .navbar-toggler {
+    border: none;
+
+    color: var(--skyblue);
 }
 
-.nav-link {
-    color: #56c1d4;
-    font-size: 1em;
-    font-weight: 400;
-    padding: 8px 15px
+.navbar-light .navbar-toggler-icon {
+    background: none;
 }
 
-.nav-link:hover,
-.button-main:hover {
-    background-color: #56c1d4;
-    color: white;
-    border-radius: 7px;
-    transition: .7s;
+.navbar-light .navbar-toggler-icon .fa-bars {
+    font-size: 1.5rem;
+
+    color: var(--skyblue);
+
+    margin-top: .2rem;
 }
 
-/* ############# 3 - MAIN, BANNER CON SLOGAN #####################################################*/
-.main {
-    background-color: #56c1d4;
+
+/*##############  3 Banner   ####################################################################################### */
+main {
+    font-family: 'Inter', sans-serif;
+}
+
+.banner-section {
+    background-color: var(--white);
+    margin: 1rem 0;
+}
+
+.banner-section img {
+    width: 100%;
+
+    max-width: 500px;
+}
+
+main i {
+    font-size: 4rem;
+    color: var(--white);
+
+    background-image: linear-gradient(
+    91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    margin-top: 5px;
+}
+
+@keyframes intro-gradient {
+    0% {
+        background-position: 0% 4%;
+    }
     
+    50% {
+        background-position: 100% 97%;
+    }
+    100% {
+        background-position: 0% 4%;
+    }
 }
 
-.container-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15em 0;
+main h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+
+    letter-spacing: -.14rem;
+    line-height: 1;
+
+    background-image: linear-gradient(
+    91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.bkg-index {
-    background-image: url(../images/guantes-duo.png);
-    background-size: cover;
-    background-position: center;
+
+main .banner-btn .btn {
+    padding: 1.2rem 2.4rem;
+    border-radius: 25px;
+
+    background-color: var(--grey);
+    color: var(--skyblue);
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
 }
 
-.fa-leaf {
-    font-size: 4em;
-    color: #ffffff;
-}
+main .banner-btn .btn:hover {
+    background-image: linear-gradient(
+    91.36deg, #56c1d4 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
 
-.title-main {
-    padding: 0.5em 0 0;
-    margin: 0 3em;
-    font-size: 3em;
-    font-weight: 800;
-    color: #ffffff;
-}
+    color: var(--white);
 
-.description-main {
-    padding: 1em 0 2em;
-    margin: 0 3em;
-    color: #ffffff;
-    font-size: 1.2em;
-    font-weight: 500;
-    opacity: .80;
+    transition: .7s ease;
 }
 
 .floating {  
@@ -144,513 +234,524 @@ img {
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
 }
-/* ############# 4 - SECTION, TRABAJA CON NOSOTROS #####################################################*/
 
-.unete-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5em 0;
+/*##############  4 Hero   ####################################################################################### */
+.hero-section {
+    background-color: var(--white);
+
+    padding: 8rem 0;
 }
 
-.card-text {
-    width: 50%;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    color: #56c1d4;
-}
+.hero-section h2 {
+    background-image: linear-gradient(
+    91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-.card-text h2 {
-    font-size: 1em;
-}
-
-.card-text h3, p {
-    font-size: 2em;
-    padding: 0.3em;
-}
-
-.card-text p {
-    font-size: .90em;
+    font-size: 2rem;
     font-weight: 600;
-    opacity: .85;
+    letter-spacing: -.14rem;
+    line-height: 1;
 }
 
-.card-text a {
-    width: fit-content;
-    margin: 1em auto;
-    font-size: 1em;
-    padding: 15px 20px;
-    background-color: #56c1d4;
-    color: #ffffff;
-    border-radius: 7px;
+.hero-section img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.hero-section p {
+    line-height: 1.4211;
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: .012em;
+
+    color: var(--black);
+}
+
+.hero-section a {
+    text-decoration: none;
+
+    line-height: 1.4211;
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: .012em;
+
+    color: var(--blue);
+}
+
+.hero-section a:hover {
+    text-decoration: underline var(--blue) 1px;
+}
+
+/*##############  5 Services   ####################################################################################### */
+
+.services-section {
+    background-color: #ffffff;
+}
+
+.services-section h3 {
+    font-size: 1.8rem;
     font-weight: 600;
-    border: solid 1px #56c1d4;
+
+    letter-spacing: -.14rem;
+    line-height: 1;
+
+    background-image: linear-gradient(
+    91.36deg, #56c1d4 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.card-text a:hover {
-    border: solid 1px #56c1d4;
-    background-color: #ffffff;
-    color: #56c1d4;
-    transition: .7s;
-}
+.card-service {
+    margin: 2rem 0;
 
-.card-image {
-    width: 50%;
-    padding: 1em;
-}
-
-/* ############# 5 - SECTION, LIMPIEZA FRECUENTE #####################################################*/
-.container-tranquilidad {
-    background-color: #56c1d4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 7em 0 5em 0;
-    color: #ffffff;
-    height: 50vh;
-}
-
-.container-tranquilidad h2 {
-    font-size: 1em;
-}
-
-.container-tranquilidad h3 {
-    font-size: 2em;
-    padding: 0.3em;
-}
-
-.tranquilidad-botones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
-
-.tranquilidad-link {
-    margin: 15px;
-    padding: 15px 20px;
-    background-color: #ffffff;
-    border-radius: 7px;
-    color: #56c1d4;
-    font-weight: 600;
-    font-size: 1em;
-    border: solid 1px #56c1d4;
-}
-
-.tranquilidad-link:hover {
-    border: solid 1px #ffffff;
-    background-color: #56c1d4;
-    color: #ffffff;
-    transition: .7s;
-}
-
-/* ############# 6 - SECTION, LIMPIEZA OCASIONAL #####################################################*/
-.container-ocasionalmente {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 7em 0 5em 0;
-    color: #56c1d4;
-    height: 50vh;
-}
-
-.container-ocasionalmente h2 {
-    font-size: 1em;
-}
-
-.container-ocasionalmente h3 {
-    font-size: 2em;
-    padding: 0.3em;
-}
-
-.ocasionalmente-botones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
-
-.ocasionalmente-link {
-    margin: 15px;
-    padding: 15px 20px;
-    background-color: #56c1d4;
-    border-radius: 7px;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1em;
-    border: solid 1px #56c1d4;
-}
-
-.ocasionalmente-link:hover {
-    border: solid 1px #56c1d4;
-    background-color: #ffffff;
-    color: #56c1d4;
-    transition: .7s;
-}
-
-/* ############# 7 - FOOTER #####################################################*/
-.footer {
-    background-color: #56c1d4;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.footer-section-top {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1em 0 0 0;
-}
-
-.text-footer {
-    display: flex;
-    flex-direction: column;
     
-    font-size: .80em;
 }
 
-.footer-tittle,
-.footer-link {
-    color: #ffffff;
-    padding: 6px;
-    border-radius: 7px;
+.card-service img {
+    /* max-height: 300px; */
+    width: 100%;
+
+    background-color: var(--grey);
+
+    object-position: bottom;
+    object-fit: cover;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-.footer-link:hover {
-    background-color: #ffffff;
-    color: #56c1d4;
-    transition: .7s;
+.card-service-text {
+    padding: 1rem;
+
+    background-color: var(--grey);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
-.footer-copyright {
+.card-service .card-service-text h4 {
+    font-size: 1rem;
+}
+
+.card-service .card-service-text p {
+    line-height: 1.4211;
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: .012em;
+
+    color: var(--black);
+}
+
+.card-service .card-service-text a {
+    font-size: .8rem;
+
+    text-decoration: none;
+
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: .012em;
+
+    color: var(--blue);
+}
+
+.card-service .card-service-text a:hover {
+    text-decoration: underline var(--blue) 1px;
+    transition: 1s ease-in-out;
+}
+
+.section-ocasional {
+    background-color: var(--white);
+}
+
+/*##############  6 Footer   ####################################################################################### */
+footer {
+    margin: 0 1rem 1rem 1rem;
+    padding-top: 4rem;
+    padding-right: 2rem;
+
+    border-top: solid 1px var(--grey);
+}
+
+footer h3 {
+    color: var(--black);
+}
+
+footer a {
+    color: var(--blue);
+
+    text-decoration: none;
+    font-size: .8rem;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: .012em;
+
+    margin: .5rem 0;
+}
+
+footer a:hover {
+    text-decoration: underline var(--blue) 1px;
+}
+
+footer a i {
+    font-size: 2rem;
+}
+
+footer .section-encuentranos {
+    font-size: .8rem;
+}
+
+footer .firma {
+    padding-top: 1rem;
+    margin-top: 1rem;
+
+    border-top: solid 1px var(--grey);
+}
+
+footer .firma p,
+footer .firma a {
+    font-size: .8rem;
+}
+
+/*##############  7 Selection   ####################################################################################### */
+.selection-section {
+    background-color: var(--white);
+}
+
+.selection-section .row {
+    --bs-gutter-x: 0;
+} 
+
+.selection-section h2 {
+    background-image: linear-gradient(
+    91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -.14rem;
+    line-height: 1;
+
+    margin-bottom: 1rem;
+}
+
+.selection-section p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--black);
+}
+
+.selection-section p span {
+    background-image: linear-gradient(
+    91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 2rem;
+}
+
+.selection-section ul li {
+    font-size: .8rem;
+    font-weight: 500;
+    list-style: disc;
+    color: var(--black);
+}
+
+.selection-section a {
+    font-size: .8rem;
+    color: var(--blue);
+}
+
+.selection-section div img {
+    width: 100%;
+    max-height: 350px;
+
+    object-position: center;
+    object-fit: cover;
+}
+
+/*##############  8 Nosotros   ####################################################################################### */
+.nosotros-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nosotros-section p {
+    font-size: 1rem;
+}
+
+.nosotros-section h3 {
+    background-image: linear-gradient(
+    91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*##############  9 Contacto   ####################################################################################### */
+
+.contacto-section .row {
+    --bs-gutter-x: 0;
+} 
+
+.card-contacto {
+    background-color: var(--grey);
+    border-radius: 20px;
+
+    margin: 0 0 1rem 0;
+    padding: 2rem 1rem;
+
     display: flex;
-    justify-content: center;
-    padding: 1em 0;
-    color: #ffffff;
-}
-
-.copy-text {
-    font-size: .80em;
-}
-
-.copy-design {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-/*######################## 8 - MENU HAMBURGUESA ########################*/
-.navbar-links ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li a{
-    display: block;   
-}
-
-.toggle-button{
-    position: absolute;
-    top: 3.8rem;
-    right: 1rem;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-}
-
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: #56c1d4;
-    border-radius: 10px;
-}
-
-/* ############################ 9 - MAIN, NUESTROS SERVICIOS ################################## */
-.fa-hand-sparkles {
-    font-size: 4em;
-    color: #ffffff;
-}
-
-.unete-card-two {
-    display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     text-align: center;
-    padding: 1em;
 }
 
-.image-servicios {
-    object-fit: cover;
+.card-contacto h2 {
+    font-size: 1rem;
 }
 
-/* ######################## 10 - MAIN, PORQUE ELEGIRNOS ########################################################### */
-.fa-stream {
-    font-size: 4em;
-    color: #ffffff;
+.card-contacto a {
+    color: var(--blue);
 }
 
-.bkg-elegirnos {
-    background-image: url(../images/porque-elegirnos.jpg);
-    background-position: center;
-    background-size: cover;
+.card-contacto i {
+    margin-bottom: 1rem;
 }
 
-.porque-elegirnos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 
-}
+@media (min-width: 768px) {
+    .banner-section img {
+        max-width: 400px;
+    }
+    
+    .hero-section {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
 
-.container-porque-elegirnos {
-    display: flex;
-    justify-content: center;
-    padding: 5em 0;
-    margin: 0 1em;
-}
-
-.elegirnos-cards {
-    padding: 1em;
-}
-
-.elegirnos-cards i {
-    font-size: 3em;
-    color: #56c1d4;
-}
-
-.elegirnos-cards h2 {
-    color: #56c1d4;
-}
-
-.elegirnos-cards p {
-    color: #56c1d4;
-    font-size: 1em;
-}
-
-.container-image-elegirnos {
-    display: flex;
-    justify-content: center;
-}
-
-.elegirnos-image {
-    max-height: 500px;
-    object-fit: cover;
-    object-position: center;
-}
-
-/* ######################## 11 - MAIN, NOSOTROS ########################################################### */
-.fa-address-card {
-    font-size: 4em;
-    color: #ffffff;
-}
-
-.nosotros-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5em 0;
-}
-
-.nosotros-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1em;
-}
-
-.nosotros-text h2 {
-    color: #56c1d4;
-    font-size: 2em;
-}
-
-.nosotros-text p {
-    color: #56c1d4;
-    font-size: 1.3em;
-    font-weight: 600;
-    opacity: .80;
-}
-
-/*############################### 11 - MAIN, CONTACTO ##########################################*/
-.container-contacto {
-    padding: 7em 0;
-}
-
-.contacto-title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #56c1d4;
-}
-
-.contacto-card-container {
-    display: flex;
-    justify-content: center;
-    color: #56c1d4;
-    padding: 5em 0;
-}
-
-.contact-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1em 3em;
-    border: solid 1px #56c1d4;
-    padding: 1.5em;
-    border-radius: 20px;
-}
-
-.contact-image {
-    width: auto;
-}
-
-.contact-link {
-    padding: 10px;
-    margin-top: 1em;
-    color: #56c1d4;
-}
-
-.contact-link:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 769px){
-    .toggle-button{
-        display: flex;
-        z-index: 1000;
+        margin: 0 2rem;
     }
 
-    .navbar-links{
-        display: none;
+    .hero-section img {
+        grid-column: 1/2;
+        grid-row: 2/ span 3;
+
+        max-height: 350px;
+    }
+
+    .hero-section h2 {
+        grid-column: 2/3;
+        grid-row: 1 / span 2;
+
+        align-self: flex-end;
+
+        padding-bottom: 6rem;
+        padding-left: 1rem;
+
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        align-self: flex-end;
+
+        font-size: 1rem;
+    }
+
+    .hero-section a {
+        grid-column: 2/3;
+        grid-row: 3/4;
+
+        align-self: flex-start;
+
+        font-size: 1rem;
+    }
+
+    .services-section h3 {
+        font-size: 3rem;
+    }
+
+    .card-service img {
         width: 100%;
-        height: 100vh;
-        position: fixed;
-        background-color: #ffffff;
-        top: 0;
-        padding: auto auto;
-        z-index: 100;
-        align-items: center;
+        max-height: 200px;
     }
 
-    .nav{
-        flex-direction: column;
-        align-items: flex-start;
+    .card-service .card-service-text h4 {
+        font-size: 1.5rem;
     }
 
-    .navbar-links ul{
+    .card-service .card-service-text p,
+    .card-service .card-service-text a {
+        font-size: 1rem;
+    }
+
+    footer h3 {
+        color: var(--black);
+    }
+    
+    footer a {
+        font-size: 1rem;
+    }
+    
+    footer a i {
+        font-size: 2rem;
+    }
+    
+    footer .section-encuentranos {
+        font-size: 1rem;
+    }
+
+    footer .firma p,
+    footer .firma a {
+    font-size: 1rem;
+    }
+
+    .selection-section div img {
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+        max-height: 600px;
+    
+        object-position: center;
+        object-fit: cover;
     }
 
-    .navbar-links li{
-        text-align: center;
-        padding: 20px 0px;
-        font-size: 1.8em;
+    .card-contacto {
+        margin: 2rem auto;
     }
 
-    .navbar-links.active{
-        display: flex;
+    .card-contacto h2 {
+        font-size: 1rem;
     }
 
-    .unete-card {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 1em;
-        margin-top: 1em;
-    }
-
-    .card-text {
-        width: 100%;
-    }
-
-    .card-image {
-        width: 100%;
-    }
-
-    .image-servicios {
-        height: 400px;
-    }
-
-    .tranquilidad-botones,
-    .ocasionalmente-botones,
-    .unete-botones {
-        font-size: .74em;
-    }
-
-    .unete-card-two {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 1em;
-        margin-top: 1em;
-    }
-
-    .container-porque-elegirnos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .elegirnos-cards p {
-        margin: 0 4em;
-    }
-
-    .nosotros-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nosotros-text {
-        width: auto;
-        margin-bottom: 1em;
-    }
-
-    .nosotros-text p {
-        margin: 0;
-        font-size: .90em;
-    }
-
-    .copy-text {
-        font-size: .65em;
+    .card-contacto a {
+        color: var(--blue);
     }
 }
 
-@media (max-width: 550px){
-    .tranquilidad-botones,
-    .ocasionalmente-botones {
-        display: flex;
-        flex-direction: column;
+@media (min-width: 1024px) {
+    .banner-section img {
+        max-width: 450px;
+    }
+    
+    .card-service img {
+        max-height: 450px;
     }
 
-    .contacto-card-container {
-        display: flex;
-        flex-direction: column;
+    .selection-section div img {
+        width: 100%;
+        max-height: 750px;
+    
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .card-contacto {
+        margin: 2rem auto;
+    }
+
+    .card-contacto i {
+        margin-bottom: 2rem;
+    }
+
+    .card-contacto h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-contacto p {
+        font-size: 1rem;
+    }
+
+    .card-contacto a {
+        color: var(--blue);
+
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 376px){
-    .image-servicios {
-        height: 320px;
+@media (min-width: 1440px) {
+    .banner-section img {
+        max-width: 500px;
     }
-}
+    
+    .card-service img {
+        max-height: 550px;
+    }
 
-.bkg-nosotros {
-    background-image: url(../images/nosotros.jpg);
-    background-position: center;
-    background-size: cover;
-    filter: grayscale(3)
+    .hero-section h2 {
+        font-size: 3rem;
+    }
+
+    .hero-section p,
+    .hero-section a {
+        font-size: 1.2rem;
+    }
+
+    .selection-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .selection-section p {
+        font-size: 1.5rem;
+    }
+
+    .selection-section ul li,
+    .selection-section a {
+        font-size: 1rem;
+    }
+
+    .selection-section div img {
+        width: 100%;
+        max-height: 800px;
+    
+        object-position: bottom;
+        object-fit: cover;
+    }
 }
