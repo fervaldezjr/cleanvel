@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;  /* Scroll más suave */
+}
+
+body { 
+    font-family: 'Inter', sans-serif; /* Fuente general */
+    font-size: 10px;
+}
+
+img {
+    width: 100%; /* Imagenes ocupando el 100% del espacio disponible */
+}

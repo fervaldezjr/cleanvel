@@ -1,0 +1,25 @@
+{
+  "name": "project-coder",
+  "version": "1.0.0",
+  "description": "This is the final project for the Web Development course held at Coder House.  Here it has been assigned to create a website with a minimum of 5 sections or pages, semantic markup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fervaldezjr/project-coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fervaldezjr/project-coder/issues"
+  },
+  "homepage": "https://github.com/fervaldezjr/project-coder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

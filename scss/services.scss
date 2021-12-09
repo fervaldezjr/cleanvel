@@ -1,0 +1,84 @@
+.services-section {
+    background-color: #fff;
+
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        letter-spacing: -.14rem;
+        line-height: 1;
+
+        background-image: linear-gradient(
+        91.36deg, #56c1d4 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+        animation: intro-gradient 10s infinite ease both;
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-animation: intro-gradient 10s infinite ease both;
+        -moz-animation: intro-gradient 10s infinite ease both;
+        animation: intro-gradient 10s infinite ease both;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card-service {
+        margin: 2rem 0;
+
+        img {
+            width: 100%;
+
+            background-color: $grey;
+
+            object-position: bottom;
+            object-fit: cover;
+
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card-service-text {
+            padding: 1rem;
+
+            background-color: $grey;
+
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            h4 {
+                font-style: 1rem;
+            }
+
+            p {
+                line-height: 1.4211;
+                font-weight: 400;
+                font-size: .8rem;
+                letter-spacing: .012em;
+
+                color: $black;
+            }
+
+            a {
+                font-size: .8rem;
+
+                text-decoration: none;
+            
+                line-height: 1.4211;
+                font-weight: 400;
+                letter-spacing: .012em;
+
+                color: $blue;
+
+                &:hover {
+                    text-decoration: underline $blue 1px;
+                    transition: 1s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.section-ocasional {
+    background-color: $white;
+}
