@@ -145,28 +145,27 @@
         }
     }
 
+    .contacto-section {
+        .card-contacto {
 
-    .card-contacto {
-        margin: 2rem auto;
+            i {
+                margin-bottom: 2rem;
+            }
 
-        i {
-            margin-bottom: 2rem;
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            a {
+                color: $blue;
+        
+                font-size: 1rem;
+            }
         }
-
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-
-        a {
-            color: $blue;
-    
-            font-size: 1rem;
-        }
-    }
 }
 
 @media (min-width: 1440px) {
@@ -220,4 +219,5 @@
             }
         }
     }
+}
 }

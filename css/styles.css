@@ -1,195 +1,146 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
 
 html {
-    scroll-behavior: smooth;
-    /* Scroll más suave */
-}
+  scroll-behavior: smooth;
+  /* Scroll más suave */ }
 
 body {
-    font-family: 'Inter', sans-serif;
-    /* Fuente general */
-    font-size: 10px;
-}
+  font-family: 'Inter', sans-serif;
+  /* Fuente general */
+  font-size: 10px; }
 
 img {
-    width: 100%;
-    /* Imagenes ocupando el 100% del espacio disponible */
-}
+  width: 100%;
+  /* Imagenes ocupando el 100% del espacio disponible */ }
 
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
-    font-family: 'Inter', sans-serif;
-}
-
-.navbar .navbar-brand .logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  font-family: 'Inter', sans-serif; }
+  .navbar .navbar-brand .logo {
     max-width: 150px;
-    min-width: 70px;
-}
-
-.navbar .navbar-toggler {
+    min-width: 70px; }
+  .navbar .navbar-toggler {
     border: none;
-    color: #1ca5bd;
-}
-
-.navbar .navbar-toggler .navbar-toggler-icon {
-    background: none;
-}
-
-.navbar .navbar-toggler .navbar-toggler-icon .fa-bars {
-    font-size: 1.5rem;
-    color: #1ca5bd;
-    margin-top: .2rem;
-}
-
-.navbar .navbar-nav {
-    display: flex;
-}
-
-.navbar .navbar-nav .nav-link {
-    color: #1ca5bd;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: .012em;
-    line-height: 1.4211;
-    padding-right: 1rem;
-    margin: .8rem;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    background-color: #1ca5bd;
-    color: #f9fdff;
-    border-radius: 5px;
-    transition: .7s ease;
-}
+    color: #1ca5bd; }
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      background: none; }
+      .navbar .navbar-toggler .navbar-toggler-icon .fa-bars {
+        font-size: 1.5rem;
+        color: #1ca5bd;
+        margin-top: .2rem; }
+  .navbar .navbar-nav {
+    display: flex; }
+    .navbar .navbar-nav .nav-link {
+      color: #1ca5bd;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .012em;
+      line-height: 1.4211;
+      padding-right: 1rem;
+      margin: .8rem; }
+      .navbar .navbar-nav .nav-link:hover {
+        background-color: #1ca5bd;
+        color: #f9fdff;
+        border-radius: 5px;
+        transition: .7s ease; }
 
 main {
-    font-family: 'Inter', sans-serif;
-}
-
-main .banner-section {
+  font-family: 'Inter', sans-serif; }
+  main .banner-section {
     background-color: #f9fdff;
-    margin: 1rem 0;
-}
-
-main .banner-section .banner-text i {
-    font-size: 4rem;
-    color: #f9fdff;
-    background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-animation: intro-gradient 10s infinite ease both;
-    -moz-animation: intro-gradient 10s infinite ease both;
-    animation: intro-gradient 10s infinite ease both;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    margin-top: 5px;
-}
+    margin: 1rem 0; }
+    main .banner-section .banner-text i {
+      font-size: 4rem;
+      color: #f9fdff;
+      background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+      animation: intro-gradient 10s infinite ease both;
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -moz-background-clip: text;
+      -webkit-animation: intro-gradient 10s infinite ease both;
+      -moz-animation: intro-gradient 10s infinite ease both;
+      animation: intro-gradient 10s infinite ease both;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      margin-top: 5px; }
 
 @keyframes intro-gradient {
-    0% {
-        background-position: 0% 4%;
-    }
-
-    50% {
-        background-position: 100% 97%;
-    }
-
-    100% {
-        background-position: 0% 4%;
-    }
-}
-
-main .banner-section .banner-text h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: -.14rem;
-    line-height: 1;
-    background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-animation: intro-gradient 10s infinite ease both;
-    -moz-animation: intro-gradient 10s infinite ease both;
-    animation: intro-gradient 10s infinite ease both;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-main .banner-section .banner-text .banner-btn .btn {
-    padding: 1.2rem 2.4rem;
-    border-radius: 25px;
-    background-color: #ededee;
-    color: #1ca5bd;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1;
-}
-
-main .banner-section .banner-text .banner-btn .btn:hover {
-    background-image: linear-gradient(91.36deg, #56c1d4 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    color: #f9fdff;
-    transition: .7s ease;
-}
-
-main .banner-section img {
-    width: 100%;
-    max-width: 500px;
-}
-
-main .banner-section .floating {
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    margin-top: 5px;
-}
+  0% {
+    background-position: 0% 4%; }
+  50% {
+    background-position: 100% 97%; }
+  100% {
+    background-position: 0% 4%; } }
+    main .banner-section .banner-text h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: -.14rem;
+      line-height: 1;
+      background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+      animation: intro-gradient 10s infinite ease both;
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -moz-background-clip: text;
+      -webkit-animation: intro-gradient 10s infinite ease both;
+      -moz-animation: intro-gradient 10s infinite ease both;
+      animation: intro-gradient 10s infinite ease both;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    main .banner-section .banner-text .banner-btn .btn {
+      padding: 1.2rem 2.4rem;
+      border-radius: 25px;
+      background-color: #ededee;
+      color: #1ca5bd;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1; }
+      main .banner-section .banner-text .banner-btn .btn:hover {
+        background-image: linear-gradient(91.36deg, #56c1d4 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+        animation: intro-gradient 10s infinite ease both;
+        background-size: 200% 200%;
+        color: #f9fdff;
+        transition: .7s ease; }
+    main .banner-section img {
+      width: 100%;
+      max-width: 500px; }
+    main .banner-section .floating {
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      margin-top: 5px; }
 
 @keyframes floating {
-    from {
-        transform: translate(0, 0px);
-    }
-
-    65% {
-        transform: translate(0, 15px);
-    }
-
-    to {
-        transform: translate(0, 0px);
-    }
-}
+  from {
+    transform: translate(0, 0px); }
+  65% {
+    transform: translate(0, 15px); }
+  to {
+    transform: translate(0, 0px); } }
 
 .hero-section {
-    background-color: #f9fdff;
-    padding: 8rem 0;
-}
-
-.hero-section h2 {
+  background-color: #f9fdff;
+  padding: 8rem 0; }
+  .hero-section h2 {
     background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
     animation: intro-gradient 10s infinite ease both;
     background-size: 200% 200%;
@@ -205,40 +156,29 @@ main .banner-section .floating {
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: -.14rem;
-    line-height: 1;
-}
-
-.hero-section img {
+    line-height: 1; }
+  .hero-section img {
     width: 100%;
-    max-height: 200px;
-}
-
-.hero-section p {
+    max-height: 200px; }
+  .hero-section p {
     line-height: 1.4211;
     font-weight: 400;
     font-size: .8rem;
     letter-spacing: .012em;
-    color: #1d1d1f;
-}
-
-.hero-section a {
+    color: #1d1d1f; }
+  .hero-section a {
     text-decoration: none;
     line-height: 1.4211;
     font-weight: 400;
     font-size: .8rem;
     letter-spacing: .012em;
-    color: #0066cc;
-}
-
-.hero-section a:hover {
-    text-decoration: underline #0066cc 1px;
-}
+    color: #0066cc; }
+    .hero-section a:hover {
+      text-decoration: underline #0066cc 1px; }
 
 .services-section {
-    background-color: #fff;
-}
-
-.services-section h3 {
+  background-color: #fff; }
+  .services-section h3 {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: -.14rem;
@@ -254,68 +194,48 @@ main .banner-section .floating {
     animation: intro-gradient 10s infinite ease both;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.services-section .card-service {
-    margin: 2rem 0;
-}
-
-.services-section .card-service img {
-    width: 100%;
-    background-color: #ededee;
-    object-position: bottom;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.services-section .card-service .card-service-text {
-    padding: 1rem;
-    background-color: #ededee;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.services-section .card-service .card-service-text h4 {
-    font-style: 1rem;
-}
-
-.services-section .card-service .card-service-text p {
-    line-height: 1.4211;
-    font-weight: 400;
-    font-size: .8rem;
-    letter-spacing: .012em;
-    color: #1d1d1f;
-}
-
-.services-section .card-service .card-service-text a {
-    font-size: .8rem;
-    text-decoration: none;
-    line-height: 1.4211;
-    font-weight: 400;
-    letter-spacing: .012em;
-    color: #0066cc;
-}
-
-.services-section .card-service .card-service-text a:hover {
-    text-decoration: underline #0066cc 1px;
-    transition: 1s ease-in-out;
-}
+    -webkit-text-fill-color: transparent; }
+  .services-section .card-service {
+    margin: 2rem 0; }
+    .services-section .card-service img {
+      width: 100%;
+      background-color: #ededee;
+      object-position: bottom;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px; }
+    .services-section .card-service .card-service-text {
+      padding: 1rem;
+      background-color: #ededee;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px; }
+      .services-section .card-service .card-service-text h4 {
+        font-style: 1rem; }
+      .services-section .card-service .card-service-text p {
+        line-height: 1.4211;
+        font-weight: 400;
+        font-size: .8rem;
+        letter-spacing: .012em;
+        color: #1d1d1f; }
+      .services-section .card-service .card-service-text a {
+        font-size: .8rem;
+        text-decoration: none;
+        line-height: 1.4211;
+        font-weight: 400;
+        letter-spacing: .012em;
+        color: #0066cc; }
+        .services-section .card-service .card-service-text a:hover {
+          text-decoration: underline #0066cc 1px;
+          transition: 1s ease-in-out; }
 
 .section-ocasional {
-    background-color: #f9fdff;
-}
+  background-color: #f9fdff; }
 
 .selection-section {
-    background-color: #f9fdff;
-}
-
-.selection-section .row {
-    --bs-gutter-x: 0;
-}
-
-.selection-section h2 {
+  background-color: #f9fdff; }
+  .selection-section .row {
+    --bs-gutter-x: 0; }
+  .selection-section h2 {
     background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
     animation: intro-gradient 10s infinite ease both;
     background-size: 200% 200%;
@@ -332,317 +252,207 @@ main .banner-section .floating {
     font-weight: 600;
     letter-spacing: -.14rem;
     line-height: 1;
-    margin-bottom: 1rem;
-}
-
-.selection-section p {
+    margin-bottom: 1rem; }
+  .selection-section p {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1;
-    color: #1d1d1f;
-}
-
-.selection-section p span {
-    background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-animation: intro-gradient 10s infinite ease both;
-    -moz-animation: intro-gradient 10s infinite ease both;
-    animation: intro-gradient 10s infinite ease both;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2rem;
-}
-
-.selection-section ul li {
+    color: #1d1d1f; }
+    .selection-section p span {
+      background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+      animation: intro-gradient 10s infinite ease both;
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -moz-background-clip: text;
+      -webkit-animation: intro-gradient 10s infinite ease both;
+      -moz-animation: intro-gradient 10s infinite ease both;
+      animation: intro-gradient 10s infinite ease both;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2rem; }
+  .selection-section ul li {
     font-size: .8rem;
     font-weight: 500;
     list-style: disc;
-    color: #1d1d1f;
-}
-
-.selection-section a {
+    color: #1d1d1f; }
+  .selection-section a {
     color: #0066cc;
-    font-size: .8rem;
-}
-
-.selection-section div img {
+    font-size: .8rem; }
+  .selection-section div img {
     width: 100%;
     max-height: 350px;
     object-position: center;
-    object-fit: cover;
-}
+    object-fit: cover; }
 
 .nosotros-section h2 {
-    font-size: 2rem;
-    font-weight: 600;
-}
+  font-size: 2rem;
+  font-weight: 600; }
 
 .nosotros-section p {
-    font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .nosotros-section h3 {
-    background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-animation: intro-gradient 10s infinite ease both;
-    -moz-animation: intro-gradient 10s infinite ease both;
-    animation: intro-gradient 10s infinite ease both;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+  background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+  animation: intro-gradient 10s infinite ease both;
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-animation: intro-gradient 10s infinite ease both;
+  -moz-animation: intro-gradient 10s infinite ease both;
+  animation: intro-gradient 10s infinite ease both;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .contacto-section .row {
-    --bs-gutter-x: 0;
-}
+  --bs-gutter-x: 0; }
 
 .contacto-section .card-contacto {
-    background-color: #ededee;
-    border-radius: 20px;
-    margin: 0 0 1rem 0;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-.contacto-section .card-contacto h2 {
-    font-size: 1rem;
-}
-
-.contacto-section .card-contacto a {
-    color: #0066cc;
-}
-
-.contacto-section .card-contacto i {
-    margin-bottom: 1rem;
-}
+  background-color: #ededee;
+  border-radius: 20px;
+  margin: 0 0 1rem 0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
+  .contacto-section .card-contacto h2 {
+    font-size: 1rem; }
+  .contacto-section .card-contacto a {
+    color: #0066cc; }
+  .contacto-section .card-contacto i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
 
 footer {
-    margin: 0 1rem 1rem 1rem;
-    padding-top: 4rem;
-    padding-right: 2rem;
-    border-top: solid 1px #ededee;
-}
-
-footer h3 {
-    color: #1d1d1f;
-}
-
-footer a {
+  margin: 0 1rem 1rem 1rem;
+  padding-top: 4rem;
+  padding-right: 2rem;
+  border-top: solid 1px #ededee; }
+  footer h3 {
+    color: #1d1d1f; }
+  footer a {
     color: #0066cc;
     text-decoration: none;
     font-size: .8rem;
     line-height: 1.4211;
     font-weight: 400;
     letter-spacing: .012em;
-    margin: .5rem 0;
-}
-
-footer a i {
-    font-size: 2rem;
-}
-
-footer a:hover {
-    text-decoration: underline #0066cc 1px;
-}
-
-footer .section-encuentranos {
-    font-size: .8rem;
-}
-
-footer .firma {
+    margin: .5rem 0; }
+    footer a i {
+      font-size: 2rem; }
+    footer a:hover {
+      text-decoration: underline #0066cc 1px; }
+  footer .section-encuentranos {
+    font-size: .8rem; }
+  footer .firma {
     padding-top: 1rem;
     margin-top: 1rem;
-    border-top: solid 1px #ededee;
-}
-
-footer .firma p,
-footer .firma a {
-    font-size: .8rem;
-}
-
-@media (min-width: 768px) {
-    .banner-section img {
-        min-width: 400px;
-    }
-
-    .hero-section {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        margin: 0 2rem;
-    }
-
-    .hero-section img {
-        grid-column: 1/2;
-        grid-row: 2/ span 3;
-        max-height: 350px;
-    }
-
-    .hero-section h2 {
-        grid-column: 2/3;
-        grid-row: 1 / span 2;
-        align-self: flex-end;
-        padding-bottom: 6rem;
-        padding-left: 1rem;
-        font-size: 2.5rem;
-    }
-
-    .hero-section p {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        align-self: flex-end;
-        font-size: 1rem;
-    }
-
-    .hero-section a {
-        grid-column: 2/3;
-        grid-row: 3/4;
-        align-self: flex-start;
-        font-size: 1rem;
-    }
-
-    .services-section h3 {
-        font-size: 3rem;
-    }
-
-    .card-service img {
-        width: 100%;
-        max-height: 200px;
-    }
-
-    .card-service .card-service-text h4 {
-        font-size: 1.5rem;
-    }
-
-    .card-service .card-service-text p,
-    .card-service .card-service-text a {
-        font-size: 1rem;
-    }
-
-    footer h3 {
-        color: #1d1d1f;
-    }
-
-    footer a {
-        font-size: 1rem;
-    }
-
-    footer a i {
-        font-size: 2rem;
-    }
-
-    footer .section-encuentranos {
-        font-size: 1rem;
-    }
-
+    border-top: solid 1px #ededee; }
     footer .firma p,
     footer .firma a {
-        font-size: 1rem;
-    }
+      font-size: .8rem; }
 
-    .selection-section div img {
-        width: 100%;
-        max-height: 600px;
-        object-position: center;
-        object-fit: cover;
-    }
-
-    .card-contacto {
-        margin: 2rem auto;
-    }
-
+@media (min-width: 768px) {
+  .banner-section img {
+    min-width: 400px; }
+  .hero-section {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0 2rem; }
+    .hero-section img {
+      grid-column: 1/2;
+      grid-row: 2/ span 3;
+      max-height: 350px; }
+    .hero-section h2 {
+      grid-column: 2/3;
+      grid-row: 1 / span 2;
+      align-self: flex-end;
+      padding-bottom: 6rem;
+      padding-left: 1rem;
+      font-size: 2.5rem; }
+    .hero-section p {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      align-self: flex-end;
+      font-size: 1rem; }
+    .hero-section a {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      align-self: flex-start;
+      font-size: 1rem; }
+  .services-section h3 {
+    font-size: 3rem; }
+  .card-service img {
+    width: 100%;
+    max-height: 200px; }
+  .card-service .card-service-text h4 {
+    font-size: 1.5rem; }
+  .card-service .card-service-text p,
+  .card-service .card-service-text a {
+    font-size: 1rem; }
+  footer h3 {
+    color: #1d1d1f; }
+  footer a {
+    font-size: 1rem; }
+    footer a i {
+      font-size: 2rem; }
+  footer .section-encuentranos {
+    font-size: 1rem; }
+  footer .firma p,
+  footer .firma a {
+    font-size: 1rem; }
+  .selection-section div img {
+    width: 100%;
+    max-height: 600px;
+    object-position: center;
+    object-fit: cover; }
+  .card-contacto {
+    margin: 2rem auto; }
     .card-contacto h2 {
-        font-size: 1rem;
-    }
-
+      font-size: 1rem; }
     .card-contacto a {
-        color: #0066cc;
-    }
-}
+      color: #0066cc; } }
 
 @media (min-width: 1024px) {
-    .banner-section img {
-        max-width: 450px;
-    }
+  .banner-section img {
+    max-width: 450px; }
+  .card-service img {
+    max-height: 450px; }
+  .selection-section div img {
+    max-height: 750px; }
+  .contacto-section .card-contacto i {
+    margin-bottom: 2rem; }
+  .contacto-section .card-contacto h2 {
+    font-size: 1.5rem; }
+  .contacto-section .card-contacto p {
+    font-size: 1rem; }
+  .contacto-section .card-contacto a {
+    color: #0066cc;
+    font-size: 1rem; } }
 
-    .card-service img {
-        max-height: 450px;
-    }
-
-    .selection-section div img {
-        max-height: 750px;
-    }
-
-    .card-contacto {
-        margin: 2rem auto;
-    }
-
-    .card-contacto i {
-        margin-bottom: 2rem;
-    }
-
-    .card-contacto h2 {
-        font-size: 1.5rem;
-    }
-
-    .card-contacto p {
-        font-size: 1rem;
-    }
-
-    .card-contacto a {
-        color: #0066cc;
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 1440px) {
-    .banner-section img {
-        max-width: 500px;
-    }
-
-    .card-service img {
-        max-height: 550px;
-    }
-
-    .hero-section h2 {
-        font-size: 3rem;
-    }
-
-    .hero-section p,
-    .hero-section a {
-        font-size: 1.2rem;
-    }
-
-    .selection-section h2 {
-        font-size: 2.5rem;
-    }
-
-    .selection-section p {
-        font-size: 1.5rem;
-    }
-
-    .selection-section ul li {
-        font-size: 1rem;
-    }
-
-    .selection-section a {
-        font-size: 1rem;
-    }
-
-    .selection-section div img {
-        max-height: 800px;
-    }
-}
+@media (min-width: 1024px) and (min-width: 1440px) {
+  .banner-section img {
+    max-width: 500px; }
+  .card-service img {
+    max-height: 550px; }
+  .hero-section h2 {
+    font-size: 3rem; }
+  .hero-section p,
+  .hero-section a {
+    font-size: 1.2rem; }
+  .selection-section h2 {
+    font-size: 2.5rem; }
+  .selection-section p {
+    font-size: 1.5rem; }
+  .selection-section ul li {
+    font-size: 1rem; }
+  .selection-section a {
+    font-size: 1rem; }
+  .selection-section div img {
+    max-height: 800px; } }

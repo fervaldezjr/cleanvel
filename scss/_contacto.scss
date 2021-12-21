@@ -1,7 +1,7 @@
 .contacto-section {
     .row {
         --bs-gutter-x: 0;
-    }
+        }
 
     .card-contacto {
         background-color: $grey;
@@ -25,6 +25,8 @@
         }
 
         i {
+            font-size: 1.5rem;
+
             margin-bottom: 1rem;
         }
     }
