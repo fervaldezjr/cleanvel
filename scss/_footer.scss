@@ -14,9 +14,10 @@ footer {
 
         text-decoration: none;
         font-size: .8rem;
-        line-height: 1.4211;
         font-weight: 400;
-        letter-spacing: .012em;
+
+        @include line-letter(1.4211, .012em);
+
     
         margin: .5rem 0;
 
