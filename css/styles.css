@@ -1,5 +1,19 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.texto-gradiant, main .banner-section .banner-text i, main .banner-section .banner-text h1, .hero-section h2, .services-section h3, .selection-section h2, .selection-section p span, .nosotros-section h3 {
+  background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
+  animation: intro-gradient 10s infinite ease both;
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-animation: intro-gradient 10s infinite ease both;
+  -moz-animation: intro-gradient 10s infinite ease both;
+  animation: intro-gradient 10s infinite ease both;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 * {
   margin: 0;
   padding: 0;
@@ -44,8 +58,8 @@ img {
       color: #1ca5bd;
       font-size: 1rem;
       font-weight: 500;
-      letter-spacing: .012em;
       line-height: 1.4211;
+      letter-spacing: 0.012em;
       padding-right: 1rem;
       margin: .8rem; }
       .navbar .navbar-nav .nav-link:hover {
@@ -62,18 +76,6 @@ main {
     main .banner-section .banner-text i {
       font-size: 4rem;
       color: #f9fdff;
-      background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-      animation: intro-gradient 10s infinite ease both;
-      background-size: 200% 200%;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -moz-background-clip: text;
-      -webkit-animation: intro-gradient 10s infinite ease both;
-      -moz-animation: intro-gradient 10s infinite ease both;
-      animation: intro-gradient 10s infinite ease both;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
       animation-name: floating;
       animation-duration: 3s;
       animation-iteration-count: infinite;
@@ -90,24 +92,12 @@ main {
     main .banner-section .banner-text h1 {
       font-size: 3rem;
       font-weight: 600;
-      letter-spacing: -.14rem;
       line-height: 1;
-      background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-      animation: intro-gradient 10s infinite ease both;
-      background-size: 200% 200%;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -moz-background-clip: text;
-      -webkit-animation: intro-gradient 10s infinite ease both;
-      -moz-animation: intro-gradient 10s infinite ease both;
-      animation: intro-gradient 10s infinite ease both;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      letter-spacing: -0.2rem; }
     main .banner-section .banner-text .banner-btn .btn {
       padding: 1.2rem 2.4rem;
       border-radius: 25px;
-      background-color: #ededee;
+      background-color: #c7c7ca;
       color: #1ca5bd;
       font-family: 'Inter', sans-serif;
       font-weight: 600;
@@ -141,18 +131,6 @@ main {
   background-color: #f9fdff;
   padding: 8rem 0; }
   .hero-section h2 {
-    background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-animation: intro-gradient 10s infinite ease both;
-    -moz-animation: intro-gradient 10s infinite ease both;
-    animation: intro-gradient 10s infinite ease both;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: -.14rem;
@@ -181,48 +159,36 @@ main {
   .services-section h3 {
     font-size: 1.8rem;
     font-weight: 600;
-    letter-spacing: -.14rem;
-    line-height: 1;
-    background-image: linear-gradient(91.36deg, #56c1d4 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-animation: intro-gradient 10s infinite ease both;
-    -moz-animation: intro-gradient 10s infinite ease both;
-    animation: intro-gradient 10s infinite ease both;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    line-height: -0.14rem;
+    letter-spacing: 1; }
   .services-section .card-service {
     margin: 2rem 0; }
     .services-section .card-service img {
       width: 100%;
-      background-color: #ededee;
+      background-color: #c7c7ca;
       object-position: bottom;
       object-fit: cover;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px; }
     .services-section .card-service .card-service-text {
       padding: 1rem;
-      background-color: #ededee;
+      background-color: #c7c7ca;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px; }
       .services-section .card-service .card-service-text h4 {
         font-style: 1rem; }
       .services-section .card-service .card-service-text p {
-        line-height: 1.4211;
         font-weight: 400;
         font-size: .8rem;
-        letter-spacing: .012em;
+        line-height: 1.4211;
+        letter-spacing: 0.012em;
         color: #1d1d1f; }
       .services-section .card-service .card-service-text a {
         font-size: .8rem;
         text-decoration: none;
-        line-height: 1.4211;
         font-weight: 400;
-        letter-spacing: .012em;
+        line-height: 1.4211;
+        letter-spacing: 0.012em;
         color: #0066cc; }
         .services-section .card-service .card-service-text a:hover {
           text-decoration: underline #0066cc 1px;
@@ -236,22 +202,10 @@ main {
   .selection-section .row {
     --bs-gutter-x: 0; }
   .selection-section h2 {
-    background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-animation: intro-gradient 10s infinite ease both;
-    -moz-animation: intro-gradient 10s infinite ease both;
-    animation: intro-gradient 10s infinite ease both;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: -.14rem;
     line-height: 1;
+    letter-spacing: -0.14rem;
     margin-bottom: 1rem; }
   .selection-section p {
     font-size: 1rem;
@@ -259,18 +213,6 @@ main {
     line-height: 1;
     color: #1d1d1f; }
     .selection-section p span {
-      background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-      animation: intro-gradient 10s infinite ease both;
-      background-size: 200% 200%;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -moz-background-clip: text;
-      -webkit-animation: intro-gradient 10s infinite ease both;
-      -moz-animation: intro-gradient 10s infinite ease both;
-      animation: intro-gradient 10s infinite ease both;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
       font-size: 2rem; }
   .selection-section ul li {
     font-size: .8rem;
@@ -286,32 +228,20 @@ main {
     object-position: center;
     object-fit: cover; }
 
-.nosotros-section h2 {
-  font-size: 2rem;
-  font-weight: 600; }
-
-.nosotros-section p {
-  font-size: 1rem; }
-
-.nosotros-section h3 {
-  background-image: linear-gradient(91.36deg, #1ca5bd 0%, #56c1d4 13.02%, #56c1d4 25.52%, #87e3f3 37.5%, #9dddf8 49.48%, #56c1d4 63.02%, #66c3d3 72.92%, #66c1d1 84.38%, #56c1d4 97.92%);
-  animation: intro-gradient 10s infinite ease both;
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-background-clip: text;
-  -webkit-animation: intro-gradient 10s infinite ease both;
-  -moz-animation: intro-gradient 10s infinite ease both;
-  animation: intro-gradient 10s infinite ease both;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; }
+.nosotros-section {
+  padding: 3rem; }
+  .nosotros-section h2 {
+    font-size: 2rem;
+    font-weight: 600; }
+  .nosotros-section p {
+    font-size: 1rem;
+    line-height: 2.3; }
 
 .contacto-section .row {
   --bs-gutter-x: 0; }
 
 .contacto-section .card-contacto {
-  background-color: #ededee;
+  background-color: #c7c7ca;
   border-radius: 20px;
   margin: 0 0 1rem 0;
   padding: 2rem 1rem;
@@ -325,23 +255,23 @@ main {
   .contacto-section .card-contacto a {
     color: #0066cc; }
   .contacto-section .card-contacto i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem; }
 
 footer {
   margin: 0 1rem 1rem 1rem;
   padding-top: 4rem;
   padding-right: 2rem;
-  border-top: solid 1px #ededee; }
+  border-top: solid 1px #c7c7ca; }
   footer h3 {
     color: #1d1d1f; }
   footer a {
     color: #0066cc;
     text-decoration: none;
     font-size: .8rem;
-    line-height: 1.4211;
     font-weight: 400;
-    letter-spacing: .012em;
+    line-height: 1.4211;
+    letter-spacing: 0.012em;
     margin: .5rem 0; }
     footer a i {
       font-size: 2rem; }
@@ -352,7 +282,7 @@ footer {
   footer .firma {
     padding-top: 1rem;
     margin-top: 1rem;
-    border-top: solid 1px #ededee; }
+    border-top: solid 1px #c7c7ca; }
     footer .firma p,
     footer .firma a {
       font-size: .8rem; }
@@ -427,7 +357,8 @@ footer {
   .selection-section div img {
     max-height: 750px; }
   .contacto-section .card-contacto i {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-size: 2.5rem; }
   .contacto-section .card-contacto h2 {
     font-size: 1.5rem; }
   .contacto-section .card-contacto p {

@@ -19,6 +19,11 @@ Just clone and use
     npm clone https://github.com/fervaldezjr/project-coder.git
 ```
 
+### Mixins, Extends, Maps and Server
+
+He utilizado estas propiedades de Sass para sacar provecho de algunas animaciones que se repetian constantemente y eran muchas lineas de código de más.
+He elegido para hospedar este proyecto el servicio de Netlify por la facilidad que tiene a la hora de subir una repo directamente desde GitHub.
+
 ## Contact info
 
 > fervaldezjr11@gmail.com || Fernando Julián Valdez

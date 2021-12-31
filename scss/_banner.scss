@@ -38,7 +38,7 @@ main {
                 font-size: 3rem;
                 font-weight: 600;
                 
-                @include line-letter(1, -.14em);
+                @include line-letter(1, -.20rem);
         
                 @extend .texto-gradiant;
             }
