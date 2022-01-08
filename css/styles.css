@@ -350,6 +350,8 @@ footer {
       font-size: 1rem; }
     .card-contacto a {
       color: #0066cc; }
+  .nosotros-section h2 {
+    font-size: 2rem; }
   .nosotros-section p {
     font-size: 1rem;
     line-height: 2.5; } }
