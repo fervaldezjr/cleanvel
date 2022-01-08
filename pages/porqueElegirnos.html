@@ -17,12 +17,14 @@
     <meta name="keywords" content="Servicio de limpieza en Barcelona, Servicio de limpieza, Trabajos de limpieza, Limpieza de oficinas, Limpieza de casas, Limpieza de obras, Limpieza de fines de obra, Limpieza de eventos, Productos ecologicos, Productos amigables" />
     <!-- Description -->
     <meta name="description" content="Cleanvel empresa de limpieza ubicada en Barcelona, Conocé nuestros productos y parte de nuestra filosofia de cuidar nuestro planeta" />
+    <!-- Animated Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-xl">
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="../index.html" data-aos="fade-up">
                 <img src="../images/cleanvel-logo.png" alt="Cleanvel logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +33,7 @@
             </span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" data-aos="fade-down">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
@@ -53,7 +55,7 @@
     </nav>
     <!-- Banner -->
     <main>
-        <section class="banner-section pt-5 container-xxxl d-flex flex-column flex-md-row justify-content-md-evenly align-items-center">
+        <section class="banner-section pt-5 container-xxxl d-flex flex-column flex-md-row justify-content-md-evenly align-items-center" data-aos="fade-right">
             <div class="banner-text d-flex flex-column justify-content-between align-items-center text-center">
                 <i class="fas fa-globe-europe floating"></i>
                 <h1 class="my-5">Amigables <br> con la naturaleza.</h1>
@@ -62,8 +64,8 @@
         </section>
         <!-- Productos -->
         <section class="nosotros-section container-xxl">
-            <h2>Una nueva generación: productos de limpieza ecológicos.</h2>
-            <p>El cuidado y respeto por el medio que nos rodea es una cuestión muy importante a tener en cuenta en nuestro día a día. Las empresas, fabricantes de muchos productos usuales, están concienciándose y creando artículos más responsables.
+            <h2 data-aos="fade-up-right">Una nueva generación: productos de limpieza ecológicos.</h2>
+            <p data-aos="fade-up">El cuidado y respeto por el medio que nos rodea es una cuestión muy importante a tener en cuenta en nuestro día a día. Las empresas, fabricantes de muchos productos usuales, están concienciándose y creando artículos más responsables.
 
                 En nuestra mano está hacer uso de estos nuevos resultados, que suelen ser productos ecológicos con múltiples beneficios.
                 
@@ -72,7 +74,7 @@
                 Los productos de limpieza tradicionales suelen contener químicos que son perjudiciales para las personas, y producen con mucha frecuencia alergias innecesarias. Es por ello que, llevar a cabo la limpieza con productos ecológicos harán que no corramos el riesgo de padecer a corto o largo plazo este padecimiento.
                 
                 Por otro lado, cuando se fabrican los usuales productos suelen generarse residuos perjudiciales para el medio ambiente, cosa que no ocurre con los ecológicos o naturales. Además, estos últimos usan en su manufacturación recipientes biodegradables o reciclables para que su composición sea lo más ecológica posible.</p>
-            <h3>¿Quieres contratar nuestros servicios? Puedes contactarnos</h3>
+            <h3 data-aos="fade-up">¿Quieres contratar nuestros servicios? Puedes contactarnos</h3>
         </section>
     </main>
     <!-- Footer -->
@@ -80,7 +82,7 @@
         <div class="container-xl d-flex flex-column justify-content-center align-items-center">
             <div class="row">
                 <!-- Hablemos -->
-                <div class="col-md-4 section-hablemos">
+                <div class="col-md-4 section-hablemos" data-aos="fade-right">
                     <h3>Hablemos</h3>
                     <div class="row">
                         <a href="https://api.whatsapp.com/send?phone=34682708170"> Inicia un chat en WhatsApp.</a>
@@ -89,14 +91,14 @@
                     </div>
                 </div>
                 <!-- Siguenos -->
-                <div class="col-md-4 section-siguenos">
+                <div class="col-md-4 section-siguenos" data-aos="fade-down">
                     <h3>Siguenos</h3>
                     <div class="row">
                         <a href="https://www.linkedin.com/in/fervaldezjr/"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <!-- Encuentranos -->
-                <div class="col-md-4 section-encuentranos">
+                <div class="col-md-4 section-encuentranos" data-aos="fade-right">
                     <h3>Encuentranos</h3>
                     <p>Ubicados en Barcelona, Cataluña, España.</p>
                 </div>
@@ -110,6 +112,12 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </script>
+    <!-- Animated Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Init AOS -->
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

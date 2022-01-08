@@ -231,11 +231,13 @@ main {
 .nosotros-section {
   padding: 3rem; }
   .nosotros-section h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600; }
   .nosotros-section p {
-    font-size: 1rem;
-    line-height: 2.3; }
+    font-size: .6rem;
+    line-height: 2.3;
+    font-weight: 600;
+    width: 100%; }
 
 .contacto-section .row {
   --bs-gutter-x: 0; }
@@ -347,7 +349,10 @@ footer {
     .card-contacto h2 {
       font-size: 1rem; }
     .card-contacto a {
-      color: #0066cc; } }
+      color: #0066cc; }
+  .nosotros-section p {
+    font-size: 1rem;
+    line-height: 2.5; } }
 
 @media (min-width: 1024px) {
   .banner-section img {
