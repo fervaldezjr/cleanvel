@@ -1,0 +1,31 @@
+.list-items-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include container-padding;
+    
+
+    .list-item-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8em 1.5em;
+
+        ul {
+            padding: 0 1em;
+            
+            li {
+                font-size: $font-size-bg;
+            }
+        }
+
+        .circle-grey {
+            width: 40px;
+            height: 40px;
+            background-color: grey;
+            border-radius: 50%;
+        }
+    }
+}

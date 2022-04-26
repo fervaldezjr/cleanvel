@@ -1,165 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleanvel | Servicio de limpieza</title>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/77408c3814.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Fernando Valdez - Desigual Technical Test</title>
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Favicom -->
-    <link rel="shortcut icon" href="images/cleanvel-logo.png" type="image/x-icon">
-    <!-- Keywords -->
-    <meta name="keywords" content="Servicio de limpieza en Barcelona, Servicio de limpieza, Trabajos de limpieza, Limpieza de oficinas, Limpieza de casas, Limpieza de obras, Limpieza de fines de obra, Limpieza de eventos" />
-    <!-- Description -->
-    <meta name="description" content="Cleanvel empresa de limpieza ubicada en Barcelona, Le damos paz a tus espacios, Puedes ver nuestros servicios y obtener todos nuestros medios de contacto" />
-    <!-- Animated Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-xl">
-            <a class="navbar-brand" href="index.html" data-aos="fade-up">
-                <img src="images/cleanvel-logo.png" alt="Cleanvel logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <i class="fas fa-bars"></i>
-            </span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav" data-aos="fade-down">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/porqueElegirnos.html">Ecofriendly</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                    </li>
+    <nav>
+        <div class="logo-container">
+            <img class="brand-logo" src="./assets//desigual-logo.svg" alt="Desigual Logo">
+        </div>
+        <!-- Right content -->
+        <div class="right-content">
+            <!-- Navbar -->
+            <ul class="navbar">
+                <ul class="nav-items">
+                    <a href="#" class="nav-link">Inicio</a>
                 </ul>
-            </div>
+                <ul class="nav-items">
+                    <a href="#" class="nav-link active">Perfil</a>
+                </ul>
+                <ul class="nav-items">
+                    <a href="#" class="nav-link">Compras</a>
+                </ul>
+                <ul class="nav-items">
+                    <a href="#" class="nav-link">Direcciones de envío</a>
+                </ul>
+                <ul class="nav-items">
+                    <a href="#" class="nav-link">Pago y facturación</a>
+                </ul>
+            </ul>
+            <!-- Store bar -->
+            <ul class="store-list">
+                <ul>
+                    <a class="store-link" href="#">STORES</a>
+                </ul>
+                <ul class="user-container">
+                    <a href="#">Hola Maria!</a>
+                </ul>
+                <div class="search-icon">
+                    <img src="./assets/search.svg" alt="Search Icon">
+                </div>
+                <div class="basket-container">
+                    <span class="precio">54,98 €</span>
+                    <div class="basket-items">
+                        <img src="./assets/basket.svg" alt="Search Icon">
+                        <span>1</span>
+                    </div>
+                </div>
+            </ul>
         </div>
     </nav>
-    <!-- Banner -->
-    <main class="container-xxl">
-        <section class="banner-section pt-5 d-flex flex-column flex-md-row justify-content-md-evenly align-items-center">
-            <div class="banner-text d-flex flex-column justify-content-start align-items-center text-center" data-aos="fade-right">
-                <i class="fas fa-leaf floating"></i>
-                <h1 class="my-5">Todos <br> tus  espacios en paz.</h1>
-                <div class="banner-btn">
-                    <a class="btn mb-5" href="mailto:fervaldezjr11@gmail.com" target="_blank" role="button">Solicitar presupuesto</a>
-                </div>
-            </div>
-            <img data-aos="fade-right" src="images/undraw_relaxing_at_home_re_mror.svg" alt="Undraw relaxing at home">
-        </section>
-    <!-- Hero -->
-        <section class="hero-section container-xxxl d-flex flex-column justify-content-center align-items-center text-center text-md-start">
-            <h2 class="my-3" data-aos="fade-up-right">Podes formar parte <br> de nuestro <br> equipo.</h2>
-            <img data-aos="fade-up-right" class="p-3" src="images/undraw_selecting_team_re_ndkb.svg" alt="Undraw svg">
-            <p class="px-3 pt-2" data-aos="fade-up-right">Siempre nos encontramos en búsqueda de incorporar a los mejores profesionales para continuar creciendo juntos y tú también puedes ser parte.</p>
-            <a class="px-3" href="mailto:fervaldezjr11@gmail.com" data-aos="fade-up-right">Adjunta tu curriculum ></a>
-        </section>
-    <!-- Services -->
-        <section class="container-lg services-section my-5 text-center d-flex flex-column card-container justify-content-center align-items-center" data-aos="fade-up-right">
-            <!-- Limpieza frecuente -->
-            <h3 class="my-5">Para su tranquilidad, <br> cuenta con limpieza <br> frecuente.</h3>
-            <div class="container-xl row">
-                <div class="card-service card-oficina text-start col-md">
-                    <img data-aos="fade-up" src="images/undraw_work_time_re_hdyv.svg" alt="Oficina">
-                    <div class="card-service-text" data-aos="fade-right">
-                        <h4>Limpieza de oficinas</h4>
-                        <p>Mantenemos el orden y la higiéne, solo tendrás que concentrarte en tus tareas.</p>
-                        <a href="pages/servicios.html#oficinas">Más sobre servicio en oficinas ></a>
+    <div class="wrapper">
+        <!-- Datos Personales Section -->
+        <h1>Datos personales</h1>
+        <hr>
+        <section class="datos-personales-section">
+            <form>
+                <div class="flex-container">
+                    <div class="input-container">
+                        <div class="input-content">
+                            <div class="label-content">
+                                <label for="">Text</label>
+                                <span class="asterisc">*</span>
+                            </div>
+                            <input type="text" placeholder="Text" required>
+                        </div>
+                        <div class="input-content">
+                            <div class="label-content">
+                                <label for="">Text</label>
+                                <span class="asterisc">*</span>
+                            </div>
+                            <input type="text" placeholder="Text" required>
+                        </div>
+                        <div class="input-content">
+                            <div class="label-content">
+                                <label for="">Email</label>
+                                <span class="asterisc">*</span>
+                            </div>
+                            <div class="email-input-content">
+                                <input type="email" required>
+                                <p class="email-notice">El email que has introducido no es válido</p>
+                            </div>
+                        </div>
                     </div>
+                    <hr>
+                    <!-- </section> -->
+                    <!-- List Items Section -->
+                    <section class="list-items-section">
+                        <!-- List Item Content 1 -->
+                        <div class="list-item-content">
+                            <div class="circle-grey"></div>
+                            <ul>
+                                <li>Item de un listado</li>
+                            </ul>
+                        </div>
+                        <!-- List Item Content 2 -->
+                        <div class="list-item-content">
+                            <div class="circle-grey"></div>
+                            <ul>
+                                <li>Item de un listado</li>
+                            </ul>
+                        </div>
+                        <!-- List Item Content 3 -->
+                        <div class="list-item-content">
+                            <div class="circle-grey"></div>
+                            <ul>
+                                <li>Item de un listado</li>
+                            </ul>
+                        </div>
+                        <!-- List Item Content 4 -->
+                        <div class="list-item-content">
+                            <div class="circle-grey"></div>
+                            <ul>
+                                <li>Item de un listado</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
-                <div class="card-service card-oficina text-start col-md">
-                    <img data-aos="fade-right" src="images/undraw_sweet_home_dkhr.svg" alt="Living">
-                    <div class="card-service-text" data-aos="fade-up">
-                        <h4>Limpieza de casas</h4>
-                        <p>Podrás disfrutar de todos tus espacios y relajarte en el lugar más importante que tienes.</p>
-                        <a href="pages/servicios.html#casas">Más sobre servicio en casas ></a>
-                    </div>
+                <hr>
+                <!-- Square Section -->
+                <section class="square-section">
+                    <div class="square-draw"></div>
+                    <div class="square-draw"></div>
+                    <div class="square-draw"></div>
+                    <div class="square-draw"></div>
+                    <div class="square-draw"></div>
+                    <div class="square-draw"></div>
+                    <div class="square-draw"></div>
+                    <div class="square-draw"></div>
+                </section>
+                <div class="button-container">
+                    <button>SAVE</button>
                 </div>
-
-            </div>
-        </section>
-        <section class="container-xl services-section section-ocasional mt-5 pb-5 text-center d-flex flex-column card-container justify-content-center align-items-center">
-            <!-- Limpieza ocasional -->
-            <h3 data-aos="fade-up-right" class="my-5">También ocasionalmente, <br> realizamos limpieza <br> eventual.</h3>
-            <div class="container-xl row">
-                <div class="card-service card-oficina text-start col-md">
-                    <img data-aos="fade-down" src="images/undraw_partying_re_at7f.svg" alt="Fiesta">
-                    <div class="card-service-text" data-aos="fade-right">
-                        <h4>Limpieza de eventos</h4>
-                        <p>Transformamos nuevamente los ambientes después de una gran fiesta como si nunca hubiera ocurrido.</p>
-                        <a href="pages/servicios.html#eventos">Más sobre servicio en eventos ></a>
-                    </div>
-                </div>
-                <div class="card-service card-oficina text-start col-md">
-                    <img data-aos="fade-up" src="images/undraw_coming_home_-52-ir.svg" alt="Fin de obra">
-                    <div class="card-service-text" data-aos="fade-right">
-                        <h4>Limpieza de fines de obra</h4>
-                        <p>Acompañamos el proceso de finalización de obras para que llegue en optimas condiciones a su proposito.</p>
-                        <a href="pages/servicios.html#obras">Más sobre servicio en fines de obra ></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <div class="container-xl d-flex flex-column justify-content-center align-items-center">
-            <div class="row">
-                <!-- Hablemos -->
-                <div class="col-md-4 section-hablemos" data-aos="fade-right">
-                    <h3>Hablemos</h3>
-                    <div class="row">
-                        <a href="https://api.whatsapp.com/send?phone=34682708170"> Inicia un chat en WhatsApp.</a>
-                        <a href="tel:+34682708170"> Inicia una llamada. </a>
-                        <a href="mailto:fervaldezjr11@gmail.com"> Envianos un correo. </a>
-                    </div>
-                </div>
-                <!-- Siguenos -->
-                <div class="col-md-4 section-siguenos" data-aos="fade-down">
-                    <h3>Siguenos</h3>
-                    <div class="row">
-                        <a href="https://www.linkedin.com/in/fervaldezjr/"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <!-- Encuentranos -->
-                <div class="col-md-4 section-encuentranos" data-aos="fade-right">
-                    <h3>Encuentranos</h3>
-                    <p>Ubicados en Barcelona, Cataluña, España.</p>
-                </div>
-            </div>
-                <!-- Firma -->
-            <div class="firma container-fluid justify-content-center align-items-end text-center">
-                <p>Copyright © 2021 Desarrollado por <a href="https://www.linkedin.com/in/fervaldezjr/">Fernando Valdez. </a>Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    </script>
-    <!-- Animated Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Init AOS -->
-    <script>
-        AOS.init();
-    </script>
+            </form>
+    </div>
 </body>
+
 </html>

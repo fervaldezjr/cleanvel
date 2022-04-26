@@ -1,237 +1,26 @@
 @media (min-width: 768px) {
-    .banner-section {
-        img {
-            min-width: 400px;
-        }
-    }
-
-    .hero-section {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-
-        margin: 0 2rem;
-
-        img {
-            grid-column: 1/2;
-            grid-row: 2/ span 3;
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid #dddddd;
     
-            max-height: 350px;
+        .logo-container{
+            .brand-logo {
+                max-width: 250px;
+                display: none;
+            }
         }
-
-        h2 {
-            grid-column: 2/3;
-            grid-row: 1 / span 2;
     
-            align-self: flex-end;
-    
-            padding-bottom: 6rem;
-            padding-left: 1rem;
-    
-            font-size: 2.5rem;
-        }
-
-        p {
-            grid-column: 2/3;
-            grid-row: 2/3;
-    
-            align-self: flex-end;
-    
-            font-size: 1rem;
-        }
-
-        a {
-            grid-column: 2/3;
-            grid-row: 3/4;
-    
-            align-self: flex-start;
-    
-            font-size: 1rem;
-        }
-    }
-
-    .services-section {
-        h3 {
-            font-size: 3rem;
-        }
-    }
-
-    .card-service {
-        img {
-            width: 100%;
-            max-height: 200px;
-        }
-
-        .card-service-text {
-            h4 {
-                font-size: 1.5rem;
-            }
-
-            p,
-            a {
-                font-size: 1rem;
-            }
-        }
-    }
-
-    footer {
-        h3 {
-            color: $black;
-        }
-
-        a {
-            font-size: 1rem;
-
-            i {
-                font-size: 2rem;
-            }
-        }
-
-        .section-encuentranos {
-            font-size: 1rem;
-        }
-
-        .firma {
-            p,
-            a {
-                font-size: 1rem;
-            }
-        }
-    }
-
-    .selection-section {
-        div {
-            img {
-                width: 100%;
-                max-height: 600px;
-            
-                object-position: center;
-                object-fit: cover;
-            }
-        }
-    }
-
-    .card-contacto {
-        margin: 2rem auto;
-
-        h2 {
-            font-size: 1rem;
-        }
-
-        a {
-            color: $blue;
-        }
-    }
-
-    .nosotros-section {
-        h2 {
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 2.5;
-        }
-    }
-
-}
-
-@media (min-width: 1024px) {
-    .banner-section {
-        img {
-            max-width: 450px;
-        }
-    }
-
-    .card-service {
-        img {
-            max-height: 450px;
-        }
-    }
-
-    .selection-section {
-        div {
-            img {
-                max-height: 750px;
-            }
-        }
-    }
-
-    .contacto-section {
-        .card-contacto {
-
-            i {
-                margin-bottom: 2rem;
-
-                font-size: 2.5rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            a {
-                color: $blue;
-        
-                font-size: 1rem;
-            }
-        }
-}
-
-@media (min-width: 1440px) {
-    .banner-section {
-        img {
-            max-width: 500px;
-        }
-    }
-    
-    .card-service {
-        img {
-            max-height: 550px;
-        }
-    }
-
-    .hero-section {
-        h2 {
-            font-size: 3rem;
-        }
-
-        p,
-        a {
-            font-size: 1.2rem;
-        }
-    }
-
-    .selection-section {
-        h2 {
-            font-size: 2.5rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-
-        ul {
-            li {
-                font-size: 1rem;
-            }
-        }
-
-        a {
-            font-size: 1rem;
-        }
-    }
-
-    .selection-section {
-        div {
-            img {
-                max-height: 800px;
-            }
+        .navbar {
+            display: flex;
         }
     }
 }
-}
+
+// @media (min-width: 1024px) {
+// }
+
+// @media (min-width: 1440px) {
+    
+// }

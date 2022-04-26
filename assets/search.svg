@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <!-- Clean code :) -->
+    <title>Search button</title>
+    <desc>Created with love in Sketch</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tools-component" transform="translate(-357.000000, -21.000000)" fill="#000000" fill-rule="nonzero">
+            <g id=".tools" transform="translate(111.000000, 0.000000)">
+                <g id="search-button" transform="translate(226.000000, 0.000000)">
+                    <g id="icons/header/search" transform="translate(18.000000, 19.000000)">
+                        <path d="M22.355,21.648 L16.032,15.238 C17.254,13.833 18,12.004 18,10 C18,5.589 14.411,2 10,2 C5.589,2 2,5.589 2,10 C2,14.411 5.589,18 10,18 C12.048,18 13.912,17.22 15.33,15.949 L21.644,22.351 L22.355,21.648 Z M9.999,16.999 C6.139,16.999 2.999,13.858 2.999,9.999 C2.999,6.139 6.139,2.999 9.999,2.999 C13.858,2.999 16.999,6.139 16.999,9.999 C16.999,13.859 13.859,16.999 9.999,16.999 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

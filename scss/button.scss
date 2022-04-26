@@ -1,0 +1,21 @@
+.button-container {
+    display: flex;
+    
+    button {
+        width: 100%;
+        background-color: white;
+        border: 1px solid black;
+        padding: 1em;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            max-width: 200px;
+
+            margin: 0 2.5em;
+        }
+    }
+}

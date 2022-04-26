@@ -1,0 +1,128 @@
+nav {
+    display: none;
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #dddddd;
+
+        .logo-container{
+            .brand-logo {
+                display: none;
+            }
+        }
+    
+        .navbar {
+            display: flex;
+
+            .nav-items{
+                margin: 2em 0.5em;
+
+                .nav-link {
+                    padding: 1.2em 1em;
+                    font-size: $font-size-sm;
+                    color: black;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        background-color: black;
+                        position: absolute;
+                        left: 0;
+                        top: calc(100% + 4px);
+                        width: 100%;
+                        height: 4px;
+                        opacity: 0;
+                    }
+
+                    .active::after {
+                        opacity: 0.8;
+                    }
+                
+                }
+            }
+            
+        }
+
+        .store-list {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+
+        .logo-container{
+            .brand-logo {
+                max-width: 250px;
+                padding: 1em;
+                display: flex;
+            }
+        }
+
+        .right-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+
+            .store-list {
+                display: flex;
+                align-items: center;
+                align-self: flex-end;
+
+                .store-link {
+                    color: black;
+                }
+
+                .user-container {
+                    background-color: cadetblue;
+                    padding: 1.5em 1em;
+                    margin: 0 0.5em;
+                    
+                    a {
+                        color: white;
+                    }
+                }
+
+                .search-icon {
+                    padding: 1.5em;
+                    cursor: pointer;
+                }
+
+                .basket-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-left: solid 1px gainsboro;
+                    
+                    .precio {
+                        color: black;
+                        padding: 0 1.5em;
+                        font-size: $font-size-md;
+                    }
+
+                    .basket-items {
+                        cursor: pointer;
+
+                        img {
+                            width: 20px;
+                            position: relative;
+                        }
+
+                        span {
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+
+           
+        }
+
+    }
+}

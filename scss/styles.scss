@@ -1,14 +1,17 @@
-@import "variables";
-@import "maps";
-@import "extend";
-@import "mixin";
-@import "generales";
-@import "nav";
-@import "banner";
-@import "hero";
-@import "services";
-@import "selection";
-@import "nosotros";
-@import "contacto";
-@import "footer";
-@import "media-queries";
+@import 'generales.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+@import 'datos-personales.scss';
+@import 'list-items.scss';
+@import 'square.scss';
+@import 'button.scss';
+@import 'navbar.scss';
+
+.wrapper {
+    padding: 0.9em;
+}
+
+.input-content {
+    display: flex;
+    flex-direction: column;
+}
